@@ -8,10 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@types/node':
-        specifier: ^22.14.1
-        version: 22.14.1
-    devDependencies:
       '@stylistic/eslint-plugin':
         specifier: ^4.2.0
         version: 4.2.0(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)
@@ -21,31 +17,31 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^8.30.1
         version: 8.30.1(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)
-      eslint:
-        specifier: ^9.25.0
-        version: 9.25.0(jiti@2.4.2)
+      '@unocss/eslint-plugin':
+        specifier: 66.1.0-beta.12
+        version: 66.1.0-beta.12(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)
       eslint-plugin-jsonc:
         specifier: ^2.20.0
         version: 2.20.0(eslint@9.25.0(jiti@2.4.2))
       eslint-plugin-perfectionist:
         specifier: ^4.11.0
         version: 4.11.0(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)
-      jiti:
-        specifier: ^2.4.2
-        version: 2.4.2
       jsonc-eslint-parser:
         specifier: ^2.4.0
         version: 2.4.0
+    devDependencies:
+      eslint:
+        specifier: ^9.25.0
+        version: 9.25.0(jiti@2.4.2)
+      jiti:
+        specifier: ^2.4.2
+        version: 2.4.2
       tsup:
         specifier: ^8.4.0
         version: 8.4.0(jiti@2.4.2)(typescript@5.8.3)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
-    optionalDependencies:
-      '@unocss/eslint-plugin':
-        specifier: 66.1.0-beta.12
-        version: 66.1.0-beta.12(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)
 
 packages:
 
@@ -418,9 +414,6 @@ packages:
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
-
-  '@types/node@22.14.1':
-    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
 
   '@typescript-eslint/eslint-plugin@8.30.1':
     resolution: {integrity: sha512-v+VWphxMjn+1t48/jO4t950D6KR8JaJuNXzi33Ve6P8sEmPr5k6CEXjdGwT6+LodVnEa91EQCtwjWNUCPweo+Q==}
@@ -1116,9 +1109,6 @@ packages:
   unconfig@7.3.1:
     resolution: {integrity: sha512-LH5WL+un92tGAzWS87k7LkAfwpMdm7V0IXG2FxEjZz/QxiIW5J5LkcrKQThj0aRz6+h/lFmKI9EUXmK/T0bcrw==}
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
-
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
@@ -1324,15 +1314,13 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@pkgr/core@0.1.2':
-    optional: true
+  '@pkgr/core@0.1.2': {}
 
   '@pkgr/core@0.2.4': {}
 
   '@quansync/fs@0.1.2':
     dependencies:
       quansync: 0.2.10
-    optional: true
 
   '@rollup/rollup-android-arm-eabi@4.40.0':
     optional: true
@@ -1409,10 +1397,6 @@ snapshots:
   '@types/estree@1.0.7': {}
 
   '@types/json-schema@7.0.15': {}
-
-  '@types/node@22.14.1':
-    dependencies:
-      undici-types: 6.21.0
 
   '@typescript-eslint/eslint-plugin@8.30.1(@typescript-eslint/parser@8.30.1(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
@@ -1495,10 +1479,8 @@ snapshots:
     dependencies:
       '@unocss/core': 66.1.0-beta.12
       unconfig: 7.3.1
-    optional: true
 
-  '@unocss/core@66.1.0-beta.12':
-    optional: true
+  '@unocss/core@66.1.0-beta.12': {}
 
   '@unocss/eslint-plugin@66.1.0-beta.12(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
@@ -1512,13 +1494,11 @@ snapshots:
       - eslint
       - supports-color
       - typescript
-    optional: true
 
   '@unocss/rule-utils@66.1.0-beta.12':
     dependencies:
       '@unocss/core': 66.1.0-beta.12
       magic-string: 0.30.17
-    optional: true
 
   acorn-jsx@5.3.2(acorn@8.14.1):
     dependencies:
@@ -1604,8 +1584,7 @@ snapshots:
 
   deep-is@0.1.4: {}
 
-  defu@6.1.4:
-    optional: true
+  defu@6.1.4: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -1902,7 +1881,6 @@ snapshots:
   magic-string@0.30.17:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
-    optional: true
 
   merge2@1.4.1: {}
 
@@ -1985,8 +1963,7 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  quansync@0.2.10:
-    optional: true
+  quansync@0.2.10: {}
 
   queue-microtask@1.2.3: {}
 
@@ -2087,7 +2064,6 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.1.2
       tslib: 2.8.1
-    optional: true
 
   thenify-all@1.6.0:
     dependencies:
@@ -2160,9 +2136,6 @@ snapshots:
       defu: 6.1.4
       jiti: 2.4.2
       quansync: 0.2.10
-    optional: true
-
-  undici-types@6.21.0: {}
 
   uri-js@4.4.1:
     dependencies:
