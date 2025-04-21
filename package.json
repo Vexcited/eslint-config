@@ -1,0 +1,50 @@
+{
+  "name": "@vexcited/eslint-config",
+  "type": "module",
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.8.1",
+  "description": "Vexcited's ESLint config",
+  "author": "Mikkel ALMONTE--RINGAUD <contact@vexcited.com> (https://github.com/Vexcited)",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/Vexcited",
+  "homepage": "https://github.com/Vexcited/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vexcited/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vexcited/eslint-config/issues"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup && npx @eslint/config-inspector build",
+    "dev": "nlx @eslint/config-inspector --config eslint.config.ts"
+  },
+  "dependencies": {
+    "@types/node": "^22.14.1"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-jsonc": "^2.20.0",
+    "eslint-plugin-perfectionist": "^4.11.0",
+    "jiti": "^2.4.2",
+    "jsonc-eslint-parser": "^2.4.0",
+    "tsup": "^8.4.0"
+  },
+  "optionalDependencies": {
+    "@unocss/eslint-plugin": "66.1.0-beta.12"
+  }
+}
