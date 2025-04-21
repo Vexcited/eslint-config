@@ -2,7 +2,6 @@
   "name": "@vexcited/eslint-config",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@10.8.1",
   "description": "Vexcited's ESLint config",
   "author": "Mikkel ALMONTE--RINGAUD <contact@vexcited.com> (https://github.com/Vexcited)",
   "license": "MIT",
@@ -27,8 +26,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup && npx @eslint/config-inspector build",
-    "dev": "npx @eslint/config-inspector --config eslint.config.ts"
+    "build": "tsup && bun x @eslint/config-inspector build",
+    "dev": "bun x @eslint/config-inspector --config eslint.config.ts"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^4.2.0",
