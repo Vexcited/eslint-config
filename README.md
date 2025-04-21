@@ -24,7 +24,7 @@ export default vexcited();
 
 ## Visual Studio Code
 
-Make sure you've installed the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+Make sure you've installed the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
 Once done, you can create a `.vscode/settings.json` file in your project root with the following settings.
 
