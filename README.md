@@ -1,11 +1,11 @@
-# @vexcited/eslint-config
+# `@vexcited/eslint-config`
 
 - Auto fix for formatting (aimed to be used standalone **without** Prettier)
 - Reasonable defaults, best practices, only one line of config
 - Designed to work with TypeScript, JSX, JSON(C), etc. out-of-box
 - Very opinionated, you can't change the rules at all.
 - [ESLint Flat config](https://eslint.org/docs/latest/use/configure/configuration-files-new) preferred
-- Optional UnoCSS and SolidJS support
+- Optional UnoCSS support
 
 ## Usage
 
@@ -26,7 +26,7 @@ export default vexcited();
 
 Make sure you've installed the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
-Once done, you can create a `.vscode/settings.json` file in your project root with the following settings.
+Once done, you can create a [`.vscode/settings.json`](.vscode/settings.json) file in your project root with the following settings.
 
 ```jsonc
 {
