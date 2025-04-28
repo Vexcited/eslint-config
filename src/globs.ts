@@ -60,6 +60,7 @@ export const GLOB_EXCLUDE = [
   "**/yarn.lock",
   "**/pnpm-lock.yaml",
   "**/bun.lockb",
+  "**/bun.lock",
 
   "**/output",
   "**/coverage",

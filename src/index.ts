@@ -1,4 +1,5 @@
 import type { TypedFlatConfigItem } from "./types";
+import { ignores } from "./configs/ignores";
 import { jsonc } from "./configs/jsonc";
 import { perfectionist } from "./configs/perfectionist";
 import { sortPackageJson, sortTsconfig } from "./configs/sort";
@@ -14,6 +15,7 @@ export default async function vexcited(config: VexcitedConfig = {
   unocss: false
 }): Promise<TypedFlatConfigItem[]> {
   return [
+    ...ignores(),
     ...await jsonc(),
     ...sortPackageJson(),
     ...sortTsconfig(),
