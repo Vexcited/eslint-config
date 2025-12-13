@@ -70,6 +70,7 @@ export async function typescript(): Promise<TypedFlatConfigItem[]> {
         "ts/no-extraneous-class": "off",
         "ts/no-import-type-side-effects": "error",
         "ts/no-invalid-void-type": "off",
+        "ts/no-namespace": "off",
         "ts/no-non-null-assertion": "off",
         "ts/no-redeclare": ["error", { builtinGlobals: false }],
         "ts/no-require-imports": "error",
