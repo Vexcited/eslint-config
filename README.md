@@ -11,9 +11,8 @@
 
 ```bash
 # You have to install `eslint` first,
-# `jiti` is used to load the config with `.ts` extension
-# and `@vexcited/eslint-config` is the config from this repository !
-pnpm add -D eslint jiti @vexcited/eslint-config
+# then `@vexcited/eslint-config` is the config from this repository !
+bun add -D eslint @vexcited/eslint-config
 ```
 
 ```ts
