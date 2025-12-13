@@ -1,4 +1,4 @@
-import { defineConfig } from "tsup";
+import { defineConfig } from "bunup";
 
 export default defineConfig({
   clean: true,
