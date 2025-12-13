@@ -87,5 +87,6 @@ export const GLOB_EXCLUDE = [
   "**/LICENSE*",
   "**/__snapshots__",
   "**/auto-import?(s).d.ts",
-  "**/components.d.ts"
+  "**/components.d.ts",
+  "**/.eslint-config-inspector"
 ];
