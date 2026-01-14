@@ -74,6 +74,7 @@ export const GLOB_EXCLUDE = [
   "**/.next",
   "**/.svelte-kit",
   "**/.vercel",
+  "**/.satone",
   "**/.changeset",
   "**/.idea",
   "**/.cache",
