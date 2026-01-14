@@ -30,7 +30,8 @@ export async function typescript(): Promise<TypedFlatConfigItem[]> {
         parser: parserTs,
         parserOptions: {
           sourceType: "module"
-        }
+        },
+        projectService: true
       },
       name: `vexcited/typescript/parser`
     },
