@@ -30,16 +30,16 @@
     "dev": "bun x @eslint/config-inspector --config eslint.config.ts"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^5.6.1",
-    "@typescript-eslint/eslint-plugin": "^8.49.0",
-    "@typescript-eslint/parser": "^8.49.0",
-    "@unocss/eslint-plugin": "66.5.10",
+    "@stylistic/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/eslint-plugin": "^8.53.0",
+    "@typescript-eslint/parser": "^8.53.0",
+    "@unocss/eslint-plugin": "66.6.0",
     "eslint-plugin-jsonc": "^2.21.0",
-    "eslint-plugin-perfectionist": "^4.15.1",
+    "eslint-plugin-perfectionist": "^5.3.1",
     "jsonc-eslint-parser": "^2.4.2"
   },
   "devDependencies": {
-    "bunup": "^0.16.10",
+    "bunup": "^0.16.20",
     "eslint": "^9.39.2",
     "typescript": "^5.9.3"
   }
