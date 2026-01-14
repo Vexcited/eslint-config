@@ -29,9 +29,9 @@ export async function typescript(): Promise<TypedFlatConfigItem[]> {
       languageOptions: {
         parser: parserTs,
         parserOptions: {
-          sourceType: "module"
-        },
-        projectService: true
+          sourceType: "module",
+          projectService: true
+        }
       },
       name: `vexcited/typescript/parser`
     },
